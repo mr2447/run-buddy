@@ -1,3 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
-    font-family: Helvetica, arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #39a6b2;
+}
+header {
+    padding: 20px 35px;
+    background-color: #39a6b2;
+}
+
+header h1 { /*why didnt the body {} effect header h1? answer: the browser automatically applies blue underline texts to <a> elements*/
+    font-weight: bold;
+    font-size: 36px;
+    color: #fce138;
+    margin: 0; /*why is this necessary as this is already inside a padding (precedent is at work here)?*/
+    display: inline;
+}
+
+header a {
+    color: #fce138;
+    text-decoration: none;
+}
+
+header nav {
+    float: right; /* we moved the default block-level element <nav> to the right and made it into an inline element.*/
+    margin: 7px 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
 }
