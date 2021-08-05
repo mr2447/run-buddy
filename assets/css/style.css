@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     font-family: Helvetica, Arial, sans-serif;
@@ -37,4 +38,23 @@ header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 22px;
+}
+footer {
+    width: 100%; /* I can fix it by removing width: 100%. it imitate its parents*/
+    background: #fce138;
+    padding: 40px 35px; /* Why not just delete the 35px paddng on the left and right side? what is its purporse? */
+}
+footer h2 {
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+}
+footer div {
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+}
+footer a {
+    color: #024e76;
 }
