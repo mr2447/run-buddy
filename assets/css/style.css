@@ -80,4 +80,36 @@ section {
     bottom: 120px;
     right: 140px;
 }
+
+.hero-form h3 {
+    font-size: 24px; 
+    margin: 0;
+}
+.hero-form p {
+    margin: 5px 0 15px 0;
+}
+
+.form-input {
+    border: solid 1px #024e76;
+    display: block;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 7px 15px; 
+}
+.hero-form label {
+    margin: 0 5px;
+}
+.hero-form button {
+    background-color: #024e76;
+    color: #fce138;
+    padding: 7px 15px;
+    font-size: 16;
+    border: none;
+    cursor: pointer;
+}
+.form-radio {
+    cursor: pointer;
+} 
 /* Hero Style End */
