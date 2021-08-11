@@ -80,13 +80,17 @@ section {
     padding:60px;
 }
 /*Hero Style Start */
-.habit {
-    text-align: right;
-    /*display: inline-block;*/
-    /*width: 500px;*/
-    padding: 60px;
-}
 
+.hero {
+    background-image: url("../images/hero-bg.jpg");
+    /*height: 600px;*/
+    background-size: cover;
+    background-position: center;
+    /*position: relative;*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .hero-cta {
     width: 35%;
     text-align: right;
@@ -101,24 +105,15 @@ section {
     font-size: 55px;
     color: #fce138;
 }
-.habit h2 {
-    font-size: 40px;
-    color: #fce138;
-    font-style: italic;
-}
 
-.habit p {
-    color: white;
-}
-.hero {
-    background-image: url("../images/hero-bg.jpg");
-    /*height: 600px;*/
-    background-size: cover;
-    background-position: center;
-    /*position: relative;*/
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.form-input {
+    border: solid 1px #024e76;
+    display: block;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 7px 15px; 
 }
 
 .hero-form {
@@ -142,15 +137,7 @@ section {
     margin: 5px 0 15px 0;
 }
 
-.form-input {
-    border: solid 1px #024e76;
-    display: block;
-    font-size: 16px;
-    color: #024e76;
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 7px 15px; 
-}
+
 .hero-form label {
     margin: 0 5px;
 }
