@@ -11,6 +11,9 @@ body {
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header h1 { /*why didnt the body {} effect header h1? answer: the browser automatically applies blue underline texts to <a> elements*/
@@ -18,7 +21,7 @@ header h1 { /*why didnt the body {} effect header h1? answer: the browser automa
     font-size: 36px;
     color: #fce138;
     margin: 0; /*why is this necessary as this is already inside a padding (precedent is at work here)?*/
-    display: inline;
+    /*display: "inline";*/
 }
 
 header a {
@@ -27,7 +30,7 @@ header a {
 }
 
 header nav {
-    float: right; /* we moved the default block-level element <nav> to the right and made it into an inline element.*/
+   /* float: right;*/ 
     margin: 7px 0;
 }
 
