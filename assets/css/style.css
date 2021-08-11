@@ -64,6 +64,22 @@ section {
     padding:60px;
 }
 /*Hero Style Start */
+.habit {
+    text-align: right;
+    display: inline-block;
+    width: 500px;
+    padding: 60px;
+}
+
+.habit h2 {
+    font-size: 40px;
+    color: #fce138;
+    font-style: italic;
+}
+
+.habit p {
+    color: white;
+}
 .hero {
     background-image: url("../images/hero-bg.jpg");
     height: 600px;
