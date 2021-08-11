@@ -21,7 +21,8 @@ header h1 { /*why didnt the body {} effect header h1? answer: the browser automa
     font-size: 36px;
     color: #fce138;
     margin: 0; /*why is this necessary as this is already inside a padding (precedent is at work here)?*/
-    /*display: "inline";*/
+    /*display: "inline"; rm for flexbox*/
+    
 }
 
 header a {
@@ -30,18 +31,27 @@ header a {
 }
 
 header nav {
-   /* float: right;*/ 
+   /* float: right; rm for flexbox*/ 
     margin: 7px 0;
 }
 
-header nav ul li {
+/*header nav ul li {
     display: inline;
+}; rm for flexbox*/
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+
 }
 
 header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 1.5vw;
 }
 footer {
     width: 100%; /* I can fix it by removing width: 100%. it imitate its parents*/
