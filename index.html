@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/css/style.css" />
         <title>Run Buddy</title>  
     </head>
@@ -32,8 +33,15 @@
 
       <!-- hero/junbotron -->
       <section class="hero"> <!-- this <section> is for the background */ -->
+          <div class="hero-cta">
+            <h2>Start Building Habits.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iste cupiditate reprehenderit maiores ratione, laudantium quod perferendis accusamus mollitia consequuntur quae porro tenetur, a dicta optio, nobis ad architecto et!</p>
+          </div>
+            
           <div class="hero-form"> <!-- this div is for the form. more div can be added if you wish -->
                 <h3>Get Started Today</h3>
+                
+                
                 <p>Fill out this form and one of our trainers will schedule a consult</p>
                 <form>
                     <label for="name">Enter full name:</label>
@@ -44,107 +52,149 @@
                     <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input"/>
                     <p>
                         Have you worked out with a trainer before?
-                        <input type="radio" name="trainer-confirm" id="trainer-yes" class="form-radio"/>
-                        <label for="trainer-yes">Yes</label>
-                        <input type="radio" name="trainer-confirm" id="trainer-no" class="form-radio"/>
-                        <label for="trainer-no">No</label>
+                        <span class="radio-wrapper">
+                          <input type="radio" name="trainer-confirm" id="trainer-yes" class="form-radio"/>
+                          <label for="trainer-yes">Yes</label>
+                        </span>
+                        <span class="radio-wrapper">
+                          <input type="radio" name="trainer-confirm" id="trainer-no" class="form-radio"/>
+                          <label for="trainer-no">No</label>
+                        </span>
                     </p>
                     <p>
-                        <label for="check-box">I acknowledge that I am at least 18 years of age.</label>
-                        <input type="checkbox" name="age-confirm" id="check-box" class="form-radio">
+                        <span class="checkbox-wrapper">
+                          <input type="checkbox" name="age-confirm" id="check-box" class="form-radio">
+                          <label for="check-box">I acknowledge that I am at least 18 years of age.</label>
+                        </span>
                     </p>
                     <button type="submit">
                         Get running!
                     </button>
                 </form>
-            </div>
+        
         </section>
 
       <!-- "what we do" section -->
       <section id="what-we-do" class="intro">
-          <h2 class="section-title primary-border">What We Do</h2>
+          <div class="flex-row">
+          <h2 class="section-title primary-border">
+              What We Do
+            </h2>
+          </div>
+          <div class="flex-row">
           <p>
               We are a few graduate students who got together through our shared passion for fitness and our wish to bring the community together. Run Buddy is a result of that passion and we are proud to offer expert knowledge through our program by our trainers, who will work closely with you to design a plan tailoerd to your individual needs and schedules. We look forward to having you joining us outdoor!
           </p>
+          </div>
       </section>
 
       <!-- "what you do" section -->
       <section id="what-you-do" class="steps">
-          <h2 class="section-title secondary-border">What You Do</h2>
-
-          <div>
-              <img src= "./assets/images/01-04-svgs/step-1.svg" alt=""/>
-              <h3>Step 1: <span>Fill Out the Form Above.</span></h3>
-              <p>You're already here, so why not?</p>
+          <div class="flex-row">
+            <h2 class="section-title secondary-border">
+                What You Do
+            </h2>
           </div>
 
-          <div>
-              <img src= "./assets/images/01-04-svgs/step-2.svg" alt=""/>
-              <h3>Step 2: <span>Consult with One of Our Trainers.</span></h3>
-              <p>Are you here to build muscle, lose weight, or just feel good?</p>
+          <div class="step">
+              <h3>Step 1.</h3> <!--better to add style to the container than to move individual containers-->
+              <div class="step-info">
+                  <div class="step-img">
+                     <img src= "./assets/images/01-04-svgs/step-1.svg" alt=""/>
+                  </div>
+                  <div class="step-text">
+                      <h4>Fill Out The Form Above</h4>
+                      <p>You're already here, so why not?</p>
+                  </div>
+              </div>
           </div>
 
-          <div>
-              <img src= "./assets/images/01-04-svgs/step-3.svg" alt=""/>
-              <h3> Step 3: <span>Get Running.</span></h3>
-              <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
+          <div class="step">
+              <h3>Step 2.</h3>
+              <div class="step-info">
+                  <div class="step-img">
+                     <img src= "./assets/images/01-04-svgs/step-2.svg" alt=""/>
+                  </div>
+                  <div class="step-text">
+                     <h4>Consult With One of Our Trainers.</h4>
+                     <p>Are you here to build muscle, lose weight, or just feel good?</p>
+                  </div>
+                </div>
           </div>
+
+          <div class="step">
+              <h3> Step 3.</h3>
+              <div class="step-info">
+                    <div class="step-img">
+                     <img src= "./assets/images/01-04-svgs/step-3.svg" alt=""/>
+                    </div>
+                    <div class="step-text">
+                     <h4>Get Running.</h4>
+                     <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
+                    </div>
+              </div>
+            </div>
           
-          <div>
-              <img src= "./assets/images/01-04-svgs/step-4.svg" alt=""/>
-              <h3> Step 4: <span>See Results.</span></h3>
-              <p>Bi-weekly checkins with your trainer will keep you focused</p>
+          <div class="step">
+             <h3> Step 4.</h3>
+             <div class="step-info">
+                 <div class="step-img">
+                     <img src= "./assets/images/01-04-svgs/step-4.svg" alt=""/>
+                 </div>
+                 <div class="step-text">
+                     <h4>See Results.</h4>
+                     <p>Bi-weekly checkins with your trainer will keep you focused</p>
+                 </div>
+             </div>
           </div>
       </section>
 
       <!-- "Meet the trainers" section -->
-      <section id="your-trainers" class="trainers">
+      <section id="your-trainers">
           <h2 class="section-title primary-border">Meet The Trainers</h2>
-          <article class="trainer">
-              <img src="./assets/images/01-05-trainers/trainer-1.jpg" alt="Aaron Stephens in his workout clothes, ready to pump iron" />
-              <div class="trainer-bio text-left">
-                  <h3>Arron Stephens</h3>
-                  <h4>Speed / Strength</h4>
-                  <p> Aaron has a degree in Physical Education. His passion for teaching has led him to become one of our team's most valuable trainer. Not only is he an excellent coach for our clients, he coaches fitness enthusiats how to coach!
-                  </p>
-              </div>
-          </article>
-          <article class="trainer">
-              <div class="trainer-bio text-right">
-                <h3>Joanna Gill</h3>
-                <h4>Endurance</h4>
-                <p class="text-left"> Joanna Gill has a bachelor degree in pyschology. Her expertses and her passion in the human mind has made her one of the best in training others through mentally and physically challenging tasks that are not only important to becoming fit but also invaluable skills to acquire for life. 
-                </p>
-              </div>
-              <img src="./assets/images/01-05-trainers/trainer-2.jpg" alt="joanna Gill cooling off after a workout" />
-          </article>
-          <article class="trainer">
-              <img src="./assets/images/01-05-trainers/trainer-3.jpg" alt="Harry Smith wearing a headband and lifting comically small pink weights"/>
-              <div class="trainer-bio text-left">
-                  <h3>Harry "Headband" Smith</h3>
-                  <h4>Strength</h4>
-                  <p>As our strength trainer, Harry has endured throgh many rigorous training that took years to develop. The only thing he loves lefting heavy things more is to share his experience with another fitness enthusiast. 
-                  </p>
-              </div>
-          </article>
+          <div class="trainers">
+                <article class="trainer">
+                    <img src="./assets/images/01-05-trainers/trainer-1.jpg" alt="Aaron Stephens in his workout clothes, ready to pump iron" />
+                    <div class="trainer-bio">
+                        <h3 class="trainer-name">Arron Stephens</h3>
+                        <h4 class="trainer-role">Speed / Strength</h4>
+                        <p> Aaron has a degree in Physical Education. His passion for teaching has led him to become one of our team's most valuable trainer. Not only is he an excellent coach for our clients, he coaches fitness enthusiats how to coach!
+                        </p>
+                    </div>
+                </article>
+                <article class="trainer">
+                    <img src="./assets/images/01-05-trainers/trainer-2.jpg" alt="joanna Gill cooling off after a workout" />
+                    <div class="trainer-bio">
+                        <h3 class="trainer-name">Joanna Gill</h3>
+                        <h4 class="traienr-role">Endurance</h4>
+                        <p> Joanna Gill has a bachelor degree in pyschology. Her expertses and her passion in the human mind has made her one of the best in training others through mentally and physically challenging tasks that are not only important to becoming fit but also invaluable skills to acquire for life. 
+                        </p>
+                    </div>
+                    
+                </article>
+                <article class="trainer">
+                    <img src="./assets/images/01-05-trainers/trainer-3.jpg" alt="Harry Smith wearing a headband and lifting comically small pink weights"/>
+                    <div class="trainer-bio">
+                        <h3 class="trainer-name">Harry "Headband" Smith</h3>
+                        <h4 class="trainer-role">Strength</h4>
+                        <p>As our strength trainer, Harry has endured throgh many rigorous training that took years to develop. The only thing he loves lefting heavy things more is to share his experience with another fitness enthusiast. 
+                        </p>
+                    </div>
+                </article>
+          </div>
       </section>
 
       <!-- "reach out" section -->
       <section id="reach-out" class=contact>
           <h2 class="section-title secondary-border">Reach Out</h2>
           <div class="contact-info">    
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.8590251892692!2d-73.98646588392931!3d40.765125279326206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258581e01362b%3A0xe5aa431603100c2e!2s300%20W%2055th%20St%2C%20New%20York%2C%20NY%2010019!5e0!3m2!1sen!2sus!4v1628453131459!5m2!1sen!2sus"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy">
-                </iframe>
-                    
                 <div>
                     <h3>Run Buddy</h3>
                     <p>Any questions or concers before signing up?
                     <br />
                         Let us know and we'll be happy to talk to you!
                     </p>
+                    
                     <address>
                         300 West 55th Street<br />
                         New York, NY <br />
@@ -152,15 +202,30 @@
                         P: 555.RUN.BUDZ (555.786.2839)<br />
                         E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
                     </address>
-                </div>
-            
+                </div> 
 
+                <div class="contact-form">
+                    <h3>Contact Us</h3>
+                    <form>
+                        <label for="contact-name">Your Name</label>
+                        <input type="text" id="contact-name" name="contact-name" placeholder="Your Name" />
+                        <label for="contact-message"> Message</label>
+                        <textarea id="contact-message" placeholder="Message" name="contact-message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.8590251892692!2d-73.98646588392931!3d40.765125279326206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258581e01362b%3A0xe5aa431603100c2e!2s300%20W%2055th%20St%2C%20New%20York%2C%20NY%2010019!5e0!3m2!1sen!2sus!4v1628453131459!5m2!1sen!2sus"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy">
+                </iframe>
             </div>
       </section>
 
       <!-- footer -->
       <footer>
-         <h2>❤️Made with love by Run Buddy.</h2>
+         <h2>❤️ Made with love by Run Buddy.</h2>
          <div>
              <a href="./privacy-policy.html">Read Our Privacy Policy</a><br/>
              &copy; 2021 Run Buddy, Inc.
