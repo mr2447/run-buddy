@@ -488,7 +488,7 @@ section {
 }
    /* this will be applied on any screen smaller than 980px*/
 /* MEDIA QUERY FOR TABLETS AND SMALLER*/
-@media screen and (media-width: 768px) {
+@media screen and (max-width: 768px) {
     section {
         padding: 30px 15px;
     }
